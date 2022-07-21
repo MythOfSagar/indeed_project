@@ -3,12 +3,14 @@
         <style>
           #main{
             margin: auto;
+            /* background-color: aqua; */
             padding: 50px;
           }
           #semimain{
             margin: 20px;
-           height: 700px;
+           height: auto;
             padding: 40px;
+            /* background-color: green; */
 
           }
           h1{
@@ -57,7 +59,7 @@ label{
     font-size: 1rem;
     line-height: 1.5;
 }
-user agent stylesheet
+
 label {
     cursor: default;
 }
@@ -164,7 +166,120 @@ button ,optgroup, select, textarea {
     color: #fff;
     border: 1px solid #2557a7;
     background-color: #2557a7;
- }         
+ }     
+ #want{
+  box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    /* text-align: center; */
+    padding-top: 1.5rem;
+    font-family: Noto Sans,Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,Noto,sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    border-bottom: 1px solid;
+    cursor: pointer;
+
+}
+a{
+  text-decoration: none;
+
+}
+ #pop{
+  display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* font-weight: bold; */
+ }
+ .com{ 
+    margin: 0 0 0.5rem; 
+     color: #2d2d2d; 
+     font-weight: 700; 
+    font-family: Noto Sans,Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,Noto,sans-serif;
+    font-size: 1.75rem;
+    line-height: 4.5;
+         font-weight: bold; 
+
+ }
+ #m{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  
+ }
+ .divi{
+  display: flex;
+  /* background-color: aqua; */
+  flex-direction: row;
+ }
+ .divi2{
+  display: flex;
+  /* background-color: blue; */
+
+ }
+ 
+ .ghar{
+  display: flex;
+  /* background-color: green; */
+  
+flex-direction: column;
+/* border:1px solid red; */
+}
+.kalu{
+  /* align-items: center; */
+  /* background-color: palevioletred; */
+  /* align-content: center; */
+  margin-top: 0%;
+
+  font-family: Noto Sans,Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,Noto,sans-serif;
+    font-weight: inherit;
+    color: #595959;
+    font-size: 1rem;
+    color: #2d2d2d;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    margin-right: 0.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    height:60px;
+  
+}
+
+.dabba{
+  display: flex;
+  flex-direction: row;
+   /* background-color:rebeccapurple;  */
+  gap: 7px;
+  /* border:1px solid black; */
+  
+}
+
+.k{
+  display: flex;
+  flex-direction: row;
+}
+ img{
+  width: 18%;
+  height:min-content;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  
+} 
+.fff{
+  display: flex;
+  flex-direction: row;
+  gap:20px ;
+  margin-top:-10px;
+  font-family: Noto Sans,Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,Noto,sans-serif;
+    font-weight: inherit;
+    font-size: .875rem;
+    line-height: 1.5;
+    color: #595959;
+}
 
         </style>
     </head>
@@ -180,9 +295,12 @@ button ,optgroup, select, textarea {
   <input type="text">
   <button>Find companies</button>
 </div>
+<div id="want"><a href="">Do you want to search for salaries?</a></div>
+<div id="pop"><h2 class="com">Popular companies</h2></div>
+<div id="m"></div>
+
 
           </div>
-
 
 
 
@@ -190,5 +308,144 @@ button ,optgroup, select, textarea {
     </body>
 </html>
 <script>
- 
+ var arr=[
+{
+  url:"https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/272637725886bdc1edbb86af5ae7cc0f",
+  name:"Dell Technologies",
+  reviews:"10,766 reviews",
+  emoji:"⭐⭐⭐⭐☆"
+},
+
+{
+  url:"https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/5b27268cd7b242401e78d5c21d49083f",
+  name:"Vodafone",
+  reviews:"6424 reviews",
+  emoji:"⭐⭐⭐☆☆"
+
+
+},
+
+{
+  url:"https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/29739f24e4842c13c1558bc1350dac99",
+  name:"HSBC",
+  reviews:"14,370 reviews",
+  emoji:"⭐⭐⭐⭐☆"
+
+},
+
+
+{
+  url:"https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/911e67e877e4f8b02aae165b53234b07",
+  name:"Hyatt",
+  reviews:"10,293 reviews",
+  emoji:"⭐⭐⭐⭐ ☆"
+
+},
+{
+  url:"https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/911e67e877e4f8b02aae165b53234b07",
+  name:"Syntel",
+  reviews:"10,293 reviews",
+  emoji:"⭐⭐⭐⭐ ☆"
+
+},
+{
+  url:"https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/d0e5d561c303274719c2e37f3ce69ca8",
+  name:"Flipkart.com",
+  reviews:"10,293 reviews",
+  emoji:"⭐⭐⭐⭐ ☆"
+
+},
+
+{
+  url:"https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/d0e5d561c303274719c2e37f3ce69ca8",
+  name:"Jio",
+  reviews:"10,293 reviews",
+  emoji:"⭐⭐⭐⭐ ☆"
+
+},
+{
+  url:"https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/530e1adf91837cf570e9d27c9ccab02f",
+  name:"Consulting Pvt Ltd",
+  reviews:"10,293 reviews",
+  emoji:"⭐⭐⭐⭐ ☆"
+
+},
+
+{
+  url:"https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/9bd368668c567b1663b260b57f16d3aa",
+  name:"PwC",
+  reviews:"10,293 reviews",
+  emoji:"⭐⭐⭐⭐ ☆"
+
+},
+
+
+
+
+
+ ]
+
+function getData(arr){
+  arr.forEach(el => {
+
+    var div = document.createElement("div");
+    div.setAttribute("class", "dabba");
+
+
+    var div1 = document.createElement("p");
+
+    div1.innerText=el.name
+    div1.setAttribute("class","kalu")
+
+div2=document.createElement("img")
+
+div2.src=el.url
+
+d=document.createElement("div")
+d.setAttribute("class","k")
+
+
+div3=document.createElement("p")
+div3.innerText=el.emoji
+
+div4=document.createElement("p")
+div4.innerText=el.reviews
+
+d.append(div3,div4)
+
+
+
+div4=document.createElement("div")
+
+let p=document.createElement("p")
+p.innerText="Salaries"
+
+let q =document.createElement("p")
+q.innerText="Questions"
+
+let o=document.createElement("p")
+o.innerText="Open jobs"
+div4.append(p,q,o)
+div4.setAttribute("class","fff")
+
+div1.append(d,div4)
+
+div5=document.createElement("div")
+div5.setAttribute("class","ghar")
+div.append(div2,div1)
+
+div5.append(div,div4)
+
+
+document.getElementById("m").append(div5)
+
+  });
+
+}
+getData(arr)
+
+
+
+
+
 </script>
