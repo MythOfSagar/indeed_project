@@ -1,0 +1,224 @@
+body{
+    font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    margin: 0px;
+    padding: 0px;
+}
+#SearchSection{
+    margin: auto;
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-content: center;
+}
+#SearchSection>div{
+border: 1px solid grey;
+text-align: center;
+border-radius: 8px;
+width: 40%;
+font-weight: bolder;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 25px 0px 25px;
+margin-right: 10px;
+}
+#SearchSection>div:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: 1px solid #2557a7;
+}
+#SearchSection>div>input{
+    font-size: 15px;
+    padding: 13px;
+    width: 55%;
+    border: none;
+    outline: none;
+}
+i{
+    color: grey;
+    font-size: 13px;
+}
+#find_jobs{
+    border-radius: 8px;
+    width: 130px;
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: #2557a7;
+    color: white;
+    border: 1px solid #2557a7;
+}
+#find_jobs:hover{
+    background-color: #0a3272;
+}
+#post{
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(97, 93, 93);
+}
+#post>p>a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+    color: #2557a7;
+}
+#post>p>a:hover{
+    text-decoration: underline;
+}
+#popular_searches{
+    text-align: center;
+    margin-top: 100px;
+}
+#up_search{
+margin: auto;
+display: flex;
+/* border: 1px solid black; */
+/* padding-left: 11%; */
+margin-top: 10px;
+width: 790px;
+
+}
+#lower_search{
+margin: auto;
+display: flex;
+margin-top: 10px;
+/* border: 1px solid black; */
+width: 635px;
+}
+#popular_searches>div>div{
+    margin-left: 10px;
+    background-color: #e4e2e0;
+    padding: 15px;
+    border-radius: 5px;
+   
+    }
+#popular_searches>div>div>a{
+text-decoration: none;
+color: rgb(92, 89, 89);
+}
+#popular_searches>div>div:hover{
+    background-color:#adaba9;
+    cursor: pointer;
+}
+#lower{
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#lower>p>a{
+    text-decoration: none;
+    color:#2557a7;
+}
+#footer>div{
+    margin: auto;
+    margin-top: 30px;
+    line-height: 30px;
+    width: 98%;
+
+}
+#footer>div>a{
+  margin-right: 30px;
+  text-decoration: none;
+  color: rgb(112, 111, 111);
+}
+#bottom{
+    margin-top: 10px;
+    background-color:#f3f2f1;
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+}
+#bottom>button{
+    border-radius: 8px;
+    width: 200px;
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: #2557a7;
+    color: white;
+    border: 1px solid #2557a7;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#bottom>button:hover{
+    background-color: #0a3272;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 995px) {
+    #SearchSection{
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+    #SearchSection>div{
+        border: 1px solid grey;
+        text-align: center;
+        border-radius: 10px;
+        width: 100%;
+        font-weight: bolder;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 5px 0px 5px;
+        margin-bottom: 10px;
+        }
+        #find_jobs{
+            margin: auto;
+            border-radius: 10px;
+            width: 100%;
+            font-size: 17px;
+            font-weight: bolder;
+            background-color: #2557a7;
+            color: white;
+            border: 1px solid #2557a7;
+            padding: 13px;
+        }
+
+        #up_search{
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            /* border: 1px solid black; */
+            /* padding-left: 11%; */
+            margin-top: 10px;
+            width: 100%;
+           
+           
+         }
+
+         #lower_search{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            width: 100%;
+            }
+
+}
+
+/* @media (min-width: 0px) and (max-width: 835px){
+    #up_search{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+         border: 1px solid black; 
+         padding-left: 11%; 
+        margin-top: 10px;
+        width: 790px;
+        
+        } 
+        #lower_search{
+        margin: auto;
+        display: flex;
+        margin-top: 10px; 
+        border: 1px solid black; 
+        width: 635px;
+        }
+*/ 
