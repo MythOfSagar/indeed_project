@@ -99,5 +99,5 @@ let getData=async()=>{
   function job_applyFunc(ele){
    localStorage.setItem("Applied_job_data",JSON.stringify(ele))
    
-        window.location.href="apply_job.html"
+        window.location.href="application.html"
   }
