@@ -1,0 +1,42 @@
+#navbar{
+            
+    display: flex;
+    font-size: 19px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightblue;
+    
+}
+#navbar img{
+    height: 100%;
+    margin-top: -50px; 
+}
+*{
+    color: #2d2d2d;
+    font-size: 1rem;
+    font-weight: 550;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+}
+#navbar>div{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    height: 70px;
+}
+#navbar a{
+    
+    text-decoration: none;
+    color: black;
+}
+#signIndiv a{
+    color: blue;
+}
+#navbar>div>div{
+    margin-top: 37px;
+    padding-bottom: 13px;
+    
+   
+}
+#navbar>div>div:hover{
+    border-bottom: 2px solid blue;
+}
