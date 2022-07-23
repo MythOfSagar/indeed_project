@@ -18,10 +18,17 @@ let popular_search=
     <div><a href=""><i class="fa-solid fa-magnifying-glass"></i> NGO </a></div>
 </div>`
 
+let filter_option=` <div id="filter_section">
+<button class="job_type" id="part_time">Part Time Job</button>
+<button class="job_type" id="full_time">Full Time Job</button>
+<button class="salary" id="lth">Salary Low to High</button>
+<button class="salary" id="htl">Salary High to Low</button>
+</div>
+<hr>`
 
 
 
 
 
 
-export {post,popular_search};
+export {post,popular_search,filter_option};

@@ -221,6 +221,35 @@ i{
 #apply_btn:hover{
     background-color: #0a3272;
 }
+#filter_section{
+    margin-top: 30px;
+}
+.job_type{
+width: 120px;
+height: 40px;
+text-align: center;
+padding: 10px;
+border-radius: 10px;
+background-color: #e4e2e0;
+border: 1px solid grey;
+outline: none;
+}
+.salary{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e4e2e0;
+    border: 1px solid grey;
+    outline: none;
+}
+#content{
+    padding-left: 4%;
+}
+#content>button{
+    margin-right: 5px;
+}
 
 
 
