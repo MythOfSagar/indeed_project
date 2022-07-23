@@ -221,6 +221,7 @@ i{
 #apply_btn:hover{
     background-color: #0a3272;
 }
+
 #filter_section{
     margin-top: 30px;
 }
@@ -313,22 +314,3 @@ outline: none;
 
 }
 
-/* @media (min-width: 0px) and (max-width: 835px){
-    #up_search{
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-         border: 1px solid black; 
-         padding-left: 11%; 
-        margin-top: 10px;
-        width: 790px;
-        
-        } 
-        #lower_search{
-        margin: auto;
-        display: flex;
-        margin-top: 10px; 
-        border: 1px solid black; 
-        width: 635px;
-        }
-*/ 

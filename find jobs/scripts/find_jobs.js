@@ -144,15 +144,12 @@ let getData=async()=>{
         window.location.href="application.html"
   }
 
+
   
-function partTimeJob(){
-  let data1=data.results
- data1.filter(function(el){
-  return el.contract_time=="part_time"
- })
- 
-}
+
 
  
  
+
+
 
