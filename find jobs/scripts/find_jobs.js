@@ -7,8 +7,8 @@ let PopularSearches=document.querySelector("#popular_searches")
 PopularSearches.innerHTML=popular_search
 
 
-document.querySelector("#find_jobs").addEventListener("click",findJobFunction)
-function findJobFunction(){
+  document.querySelector("#find_jobs").addEventListener("click",findJobFunction)
+  function findJobFunction(){
     //console.log("working")
     Post.innerHTML=null
     PopularSearches.innerHTML=null
