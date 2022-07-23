@@ -10,7 +10,9 @@
     <style>
 
         /* banner section */
-
+        body{
+            overflow-x: hidden;
+        }
         #banner{
             width: 100%;
             height: 350px;
@@ -123,6 +125,7 @@
     width: 25%;
     border-radius: 24px;
     border: 0.5px solid grey;
+    
 }
 #umsection{
     width: 90%;
@@ -143,8 +146,9 @@
 #um2{
     width: 100%;
     height: 64%;
-    border: 0.1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius: 5px;
+    text-decoration: underline;
 }
 #um2 h3{
     position: relative;
@@ -180,8 +184,8 @@
 #um1{
     width: 100%;
     height: 49%;
-    border: 0.1px solid grey;
-   
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   border-radius: 5px;
     display: flex;
     flex-direction: column;
    justify-content: space-evenly; 
@@ -210,9 +214,14 @@
     width: 90%;
     margin: auto;
     height: 270px;
-    border: 1px solid grey;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    box-shadow:rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+#anchor-tag-color{
+    text-decoration: none;
+    color: #24262b;
 }
 #m1{
     width: 50%;
@@ -241,7 +250,7 @@
 #m1 h3{
     position: relative;
     top: 25%;
-    left: 45%;
+    left: 50%;
    
 }
 #m2{
@@ -261,13 +270,14 @@
     width: 90%;
     margin: auto;
     height: 150px;
-    border: 1px solid grey;
+    border-radius: 5px;
     margin-top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 #lowermiddle h1{
     position: relative;
     left: 2%;
-    top: 15%;
+    top: 35%;
 }
 #lm{
   
@@ -311,6 +321,10 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+    #company-listing{
+        position: relative;
+        top: 5%;
     }
         /* upper middle section */
 
@@ -455,7 +469,9 @@ color: #24262b;
     position: relative;
     top: 13%;
     }
-    
+    #chhoose{
+        text-decoration: underline;
+    }
     </style>
 </head>
 <body>
@@ -469,11 +485,11 @@ color: #24262b;
         <div id="input">
             <div id="inpu2">
                 <label for="">What</label>
-                <input id="int1" type="text">
+                <input id="int1" type="text" placeholder="Job title">
             </div>
             <div id="input2">
                 <label for="">Where</label>
-                <input id="int" type="text">
+                <input id="int" type="text" placeholder="India">
             </div>
             <div id="input3">
                 <button onclick="submit()">submit</button>
@@ -482,111 +498,111 @@ color: #24262b;
         </div></div>
     </div>
     <!-- upper upper section -->
-<div id="usection"><h1>Browse top paying jobs by industry</h1><select name="" id=""></select></div>
+<div id="usection"><h1>Browse top paying jobs by industry</h1><select name="" id=""><option value=""><a  id="chhoose" href=""><h3>Choose an industry</h3></a></option></select></div>
  <!-- upper middle section -->
 <div id="umsection">
     <div id="um">
-        <div id="um1"><div id="position"><h3>Elementary School Teacher</h3></div>
-                    <div id="wages"><div>Average Salary</div> 
-                       <div> ₹2,47,310 per year</div> 
+        <div id="um1"><div id="position"><a id="anchor-tag-color" href="https://in.indeed.com/career/elementary-school-teacher/salaries"><h3>Elementary School Teacher</h3></a></div>
+                    <div id="wages"><div><a id="anchor-tag-color" href="https://in.indeed.com/career/elementary-school-teacher/salaries">Average Salary</a></div> 
+                       <div><a id="anchor-tag-color" href="https://in.indeed.com/career/elementary-school-teacher/salaries"> ₹2,47,310 per year</a> </div> 
                         </div>
     </div>
-        <div id="um1"><a id="position" href=""><h3>Job Openings</h3></a></div>
+        <div id="um1"><a id="position" href="https://in.indeed.com/career/elementary-school-teacher/salaries"><h3>Job Openings</h3></a></div>
     </div>
     <div id="um">
-        <div id="um1"><div id="position"><h3>Elementary School Teacher</h3></div>
-                    <div id="wages"><div>Average Salary</div> 
-                       <div> ₹2,47,310 per year</div> 
+        <div id="um1"><div id="position"><a id="anchor-tag-color" href="https://in.indeed.com/career/human-resources-specialist/salaries"><h3>Human Resources Specialist</h3></a></div>
+                    <div id="wages"><div><a id="anchor-tag-color" href="https://in.indeed.com/career/human-resources-specialist/salaries"> Average Salary</a></div> 
+                       <div><a id="anchor-tag-color" href="https://in.indeed.com/career/human-resources-specialist/salaries"> ₹2,15,490 per year </a></div> 
                         </div>
     </div>
-        <div id="um1"><a id="position" href=""><h3>Job Openings</h3></a></div>
+        <div id="um1"><a id="position" href="https://in.indeed.com/career/human-resources-specialist/salaries"><h3>Job Openings</h3></a></div>
     </div>
     <div id="um">
-        <div id="um1"><div id="position"><h3>Elementary School Teacher</h3></div>
-                    <div id="wages"><div>Average Salary</div> 
-                       <div> ₹2,47,310 per year</div> 
+        <div id="um1"><div id="position"><a id="anchor-tag-color" href="https://in.indeed.com/career/accountant/salaries"><h3>Accountant</h3></a></div>
+                    <div id="wages"><div><a id="anchor-tag-color" href="https://in.indeed.com/career/accountant/salaries">Average Salary</a> </div> 
+                       <div><a id="anchor-tag-color" href="https://in.indeed.com/career/accountant/salaries">₹2,72,468 per year</a></div> 
                         </div>
     </div>
-        <div id="um1"><a id="position" href=""><h3>Job Openings</h3></a></div>
+        <div id="um1"><a id="position" href="https://in.indeed.com/career/accountant/salaries"><h3>Job Openings</h3></a></div>
     </div>
     <div id="um">
-        <div id="um1"><div id="position"><h3>Elementary School Teacher</h3></div>
-                    <div id="wages"><div>Average Salary</div> 
-                       <div> ₹2,47,310 per year</div> 
+        <div id="um1"><div id="position"><a id="anchor-tag-color" href="https://in.indeed.com/career/customer-care-specialist/salaries"><h3>Customer Care Specialist</h3></a></div>
+                    <div id="wages"><div><a id="anchor-tag-color" href="https://in.indeed.com/career/customer-care-specialist/salaries"> Average Salary</a></div> 
+                       <div><a id="anchor-tag-color" href="https://in.indeed.com/career/customer-care-specialist/salaries"> ₹2,23,209 per year</a></div> 
                         </div>
     </div>
-        <div id="um1"><a id="position" href=""><h3>Job Openings</h3></a></div>
+        <div id="um1"><a id="position" href="https://in.indeed.com/career/customer-care-specialist/salaries"><h3>Job Openings</h3></a></div>
     </div>
     <div id="um">
-        <div id="um1"><div id="position"><h3>Elementary School Teacher</h3></div>
-                    <div id="wages"><div>Average Salary</div> 
-                       <div> ₹2,47,310 per year</div> 
+        <div id="um1"><div id="position"><a id="anchor-tag-color" href="https://in.indeed.com/career/office-assistant/salaries"><h3>Office Assistant</h3></a></div>
+                    <div id="wages"><div><a id="anchor-tag-color" href="https://in.indeed.com/career/office-assistant/salaries">Average Salary</a> </div> 
+                       <div><a id="anchor-tag-color" href="https://in.indeed.com/career/office-assistant/salaries">₹1,89,002 per year</a></div> 
                         </div>
     </div>
-        <div id="um1"><a id="position" href=""><h3>Job Openings</h3></a></div>
+        <div id="um1"><a id="position" href="https://in.indeed.com/career/office-assistant/salaries"><h3>Job Openings</h3></a></div>
     </div>
     <div id="um">
-        <div id="um1"><div id="position"><h3>Elementary School Teacher</h3></div>
-                    <div id="wages"><div>Average Salary</div> 
-                       <div> ₹2,47,310 per year</div> 
+        <div id="um1"><div id="position"><a id="anchor-tag-color" href="https://in.indeed.com/career/back-office-executive/salaries"><h3>Back Office Executive</h3></a></div>
+                    <div id="wages"><div><a id="anchor-tag-color" href="https://in.indeed.com/career/back-office-executive/salaries"> Average Salary</a></div> 
+                       <div><a id="anchor-tag-color" href="https://in.indeed.com/career/back-office-executive/salaries">₹3,79,163 per year</a> </div> 
                         </div>
     </div>
-        <div id="um1"><a id="position" href=""><h3>Job Openings</h3></a></div>
+        <div id="um1"><a id="position" href="https://in.indeed.com/career/back-office-executive/salaries"><h3>Job Openings</h3></a></div>
     </div>
     <div id="um">
-        <div id="um1"><div id="position"><h3>Elementary School Teacher</h3></div>
-                    <div id="wages"><div>Average Salary</div> 
-                       <div> ₹2,47,310 per year</div> 
+        <div id="um1"><div id="position"><a id="anchor-tag-color" href="https://in.indeed.com/career/data-entry-clerk/salaries"><h3>Data Entry Clerk</h3></a></div>
+                    <div id="wages"><div><a id="anchor-tag-color" href="https://in.indeed.com/career/data-entry-clerk/salaries">Average Salary</a></div> 
+                       <div><a id="anchor-tag-color" href="https://in.indeed.com/career/data-entry-clerk/salaries">₹2,34,426 per year</a></div> 
                         </div>
     </div>
-        <div id="um1"><a id="position" href=""><h3>Job Openings</h3></a></div>
+        <div id="um1"><a id="position" href="https://in.indeed.com/career/data-entry-clerk/salaries"><h3>Job Openings</h3></a></div>
     </div>
     <div id="um">
-        <div id="um1"><div id="position"><h3>Elementary School Teacher</h3></div>
-                    <div id="wages"><div>Average Salary</div> 
-                       <div> ₹2,47,310 per year</div> 
+        <div id="um1"><div id="position"><a id="anchor-tag-color" href="https://in.indeed.com/career/graphic-designer/salaries"><h3>Graphic Designer</h3></a></div>
+                    <div id="wages"><div><a id="anchor-tag-color" href="https://in.indeed.com/career/graphic-designer/salaries">Average Salary</a></div> 
+                       <div><a id="anchor-tag-color" href="https://in.indeed.com/career/graphic-designer/salaries">₹2,59,606 per year</a></div> 
                         </div>
     </div>
-        <div id="um1"><a id="position" href=""><h3>Job Openings</h3></a></div>
+        <div id="um1"><a id="position" href="https://in.indeed.com/career/graphic-designer/salaries"><h3>Job Openings</h3></a></div>
     </div>
    
     
 </div>
-  <!-- upper upper section -->
-  <div id="usection"><h1>Browse top paying jobs by industry</h1><select name="" id=""></select></div>
+
+  <div id="usection"><h1>Browse top paying jobs by industry</h1><select name="" id=""><option value=""><a  id="chhoose" href=""><h3>Choose an industry</h3></a></option></select></div>
   <!-- upper middle section -->
   <div id="umsection">
     <div id="um">
-        <div id="um2"><div id="um2_1"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/064eff7aab72cb84fbb7f92b82f6ac4a" alt=""></div>
-    <h3>Capgemini</h3><p> 8.8k reviews</p><h5>></h5></div>
+        <div id="um2"><div id="um2_1"><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Capgemini/salaries?from=career"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/064eff7aab72cb84fbb7f92b82f6ac4a" alt=""></a></div>
+    <a id="anchor-tag-color" href="https://in.indeed.com/cmp/Capgemini/salaries?from=career"><h3>Capgemini</h3></a><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Capgemini/salaries?from=career"><p> 8.8k reviews</p></a><h5>></h5></div>
     </div>
     <div id="um">
-        <div id="um2"><div id="um2_1"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/064eff7aab72cb84fbb7f92b82f6ac4a" alt=""></div>
-    <h3>Capgemini</h3><p> 8.8k reviews</p><h5>></h5></div>
+        <div id="um2"><div id="um2_1"><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Tata-Consultancy-Services-(tcs)/salaries?from=career"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/13b693b4dcc055d2344351b4c9a148e9" alt=""></a></div>
+    <a id="anchor-tag-color" href="https://in.indeed.com/cmp/Tata-Consultancy-Services-(tcs)/salaries?from=career"><h3>(TCS)</h3></a><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Tata-Consultancy-Services-(tcs)/salaries?from=career"><p> 19.9k reviews</p></a><h5>></h5></div>
     </div>
     <div id="um">
-        <div id="um2"><div id="um2_1"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/064eff7aab72cb84fbb7f92b82f6ac4a" alt=""></div>
-    <h3>Capgemini</h3><p> 8.8k reviews</p><h5>></h5></div>
+        <div id="um2"><div id="um2_1"><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Accenture/salaries?from=career"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/fff3cc32d7e908a657ea1da5a4a1732b" alt=""></a></div>
+    <a id="anchor-tag-color" href="https://in.indeed.com/cmp/Accenture/salaries?from=career"><h3>Accenture</h3></a><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Accenture/salaries?from=career"><p>22k reviews</p></a><h5>></h5></div>
     </div>
     <div id="um">
-        <div id="um2"><div id="um2_1"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/064eff7aab72cb84fbb7f92b82f6ac4a" alt=""></div>
-    <h3>Capgemini</h3><p> 8.8k reviews</p><h5>></h5></div>
+        <div id="um2"><div id="um2_1"><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Cognizant-Technology-Solutions/salaries?from=career"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/ce43c82fedc38bf5739f8c90376c3b98" alt=""></a></div>
+    <a id="anchor-tag-color" href="https://in.indeed.com/cmp/Cognizant-Technology-Solutions/salaries?from=career"><h3>Cognizant</h3></a><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Cognizant-Technology-Solutions/salaries?from=career"><p>14.8k reviews</p></a><h5>></h5></div>
     </div>
     <div id="um">
-        <div id="um2"><div id="um2_1"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/064eff7aab72cb84fbb7f92b82f6ac4a" alt=""></div>
-    <h3>Capgemini</h3><p> 8.8k reviews</p><h5>></h5></div>
+        <div id="um2"><div id="um2_1"><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Byju's/salaries?from=career"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/349d1c5aed5c3943dadc47139a21b79d" alt=""></a></div>
+    <a id="anchor-tag-color" href="https://in.indeed.com/cmp/Byju's/salaries?from=career"><h3>Byju's</h3></a><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Byju's/salaries?from=career"><p>382 reviews</p></a><h5>></h5></div>
     </div>
     <div id="um">
-        <div id="um2"><div id="um2_1"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/064eff7aab72cb84fbb7f92b82f6ac4a" alt=""></div>
-    <h3>Capgemini</h3><p> 8.8k reviews</p><h5>></h5></div>
+        <div id="um2"><div id="um2_1"><a id="anchor-tag-color" href="https://in.indeed.com/cmp/IBM/salaries?from=career"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/e33d1816f29251d95814fd99eae809df" alt=""></a></div>
+    <a id="anchor-tag-color" href="https://in.indeed.com/cmp/IBM/salaries?from=career"><h3>IBM</h3></a><a id="anchor-tag-color" href="https://in.indeed.com/cmp/IBM/salaries?from=career"><p>31.5k reviews</p></a><h5>></h5></div>
     </div>
     <div id="um">
-        <div id="um2"><div id="um2_1"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/064eff7aab72cb84fbb7f92b82f6ac4a" alt=""></div>
-    <h3>Capgemini</h3><p> 8.8k reviews</p><h5>></h5></div>
+        <div id="um2"><div id="um2_1"><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Amazon.com/salaries?from=career"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/3e9d43f5c277de169808abdcaf49ba2c" alt=""></a></div>
+    <a id="anchor-tag-color" href="https://in.indeed.com/cmp/Amazon.com/salaries?from=career"><h3>Amazon</h3></a><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Amazon.com/salaries?from=career"><p>85.2k reviews</p></a><h5>></h5></div>
     </div>
     <div id="um">
-        <div id="um2"><div id="um2_1"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/064eff7aab72cb84fbb7f92b82f6ac4a" alt=""></div>
-    <h3>Capgemini</h3><p> 8.8k reviews</p><h5>></h5></div>
+        <div id="um2"><div id="um2_1"><a id="anchor-tag-color" href="https://in.indeed.com/cmp/Indigo-Airlines/salaries?from=career"><img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/5335229f1b22e90f1e5eafb892704339" alt=""></a></div>
+    <a id="anchor-tag-color" href="https://in.indeed.com/cmp/Indigo-Airlines/salaries?from=career"><h3>Indigo Airlines</h3></a><a href="https://in.indeed.com/cmp/Indigo-Airlines/salaries?from=career"><p>410 reviews</p></a><h5>></h5></div>
     </div>
    
  
@@ -640,59 +656,59 @@ color: #24262b;
     </div>
     <div id="company-listing">
         <ul>
-            <li>Security Guard</li>
-            <li>Software Engineer</li>
-            <li>Accountant</li>
-            <li>Data Entry Clerk</li>
-            <li>Teacher</li>
-            <li>Computer</li>
-            <li>Nurse</li>
-            <li>Labortory Technician</li>
-            <li>Driver</li>
-            <li>Pharmacist</li>
-            <li>Architect</li>
-            <li>Computer Engineer</li>
-            <li>Mechanical Engineer</li>
-            <li>Civil Engineer</li>
-            <li>Engineer</li>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/security-guard/salaries"><li>Security Guard</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/software-engineer/salaries"><li>Software Engineer</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/accountant/salaries"><li>Accountant</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/data-entry-clerk/salaries"><li>Data Entry Clerk</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/teacher/salaries"><li>Teacher</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/computer-operator/salaries"><li>Computer Operator</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/nurse/salaries"><li>Nurse</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/laboratory-technician/salaries"><li>Labortory Technician</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/driver/salaries"><li>Driver</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/pharmacist/salaries"><li>Pharmacist</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/architect/salaries"><li>Architect</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/computer-engineer/salaries"><li>Computer Engineer</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/mechanical-engineer/salaries"><li>Mechanical Engineer</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/civil-engineer/salaries"><li>Civil Engineer</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/engineer/salaries"><li>Engineer</li></a>
         </ul>
     </div>
     <div id="company-listing">
         <ul>
-            <li>High School Teacher</li>
-            <li>Graphic Designer</li>
-            <li>Assistant Professor</li>
-            <li>Physiotherapist</li>
-            <li>Full Stack Developer</li>
-            <li>Radiologist</li>
-            <li>Back Office Executive</li>
-            <li>Electrical Engineer</li>
-            <li>Electrician</li>
-            <li>Medical Representative</li>
-            <li>Flight Attendant</li>
-            <li>Web Developer</li>
-            <li>Data Scientist</li>
-            <li>Veterinarian</li>
-            <li>Police Officer</li>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/high-school-teacher/salaries"><li>High School Teacher</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/graphic-designer/salaries"><li>Graphic Designer</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/assistant-professor/salaries"><li>Assistant Professor</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/physiotherapist/salaries"><li>Physiotherapist</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/full-stack-developer/salaries"><li>Full Stack Developer</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/radiologist/salaries"><li>Radiologist</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/back-office-executive/salaries"><li>Back Office Executive</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/electrical-engineer/salaries"><li>Electrical Engineer</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/electrician/salaries"><li>Electrician</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/medical-representative/salaries"><li>Medical Representative</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/flight-attendant/salaries"><li>Flight Attendant</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/web-developer/salaries"><li>Web Developer</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/data-scientist/salaries"><li>Data Scientist</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/veterinarian/salaries"><li>Veterinarian</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/police-officer/salaries"><li>Police Officer</li></a>
         </ul>
     </div>
     <div id="company-listing">
         <ul>
-            <li>Registered Nurse</li>
-            <li>CNC Operator</li>
-            <li>Counselor</li>
-            <li>School Teacher</li>
-            <li>Office Assistant</li>
-            <li>Collector</li>
-            <li>Medical Officer</li>
-            <li>Data Analyst</li>
-            <li>Digital Marketer</li>
-            <li>Bus Driver</li>
-            <li>Microbiologist</li>
-            <li>Housekeeper</li>
-            <li>Interior Designer</li>
-            <li>Firefighter</li>
-            <li>Stenographer</li>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/registered-nurse/salaries"><li>Registered Nurse</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/cnc-operator/salaries"><li>CNC Operator</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/counselor/salaries"><li>Counselor</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/school-teacher/salaries"><li>School Teacher</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/office-assistant/salaries"><li>Office Assistant</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/collector/salaries"><li>Collector</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/medical-officer/salaries"><li>Medical Officer</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/data-analyst/salaries"><li>Data Analyst</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/digital-marketer/salaries"><li>Digital Marketer</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/bus-driver/salaries"><li>Bus Driver</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/microbiologist/salaries"><li>Microbiologist</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/housekeeper/salaries"><li>Housekeeper</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/interior-designer/salaries"><li>Interior Designer</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/firefighter/salaries"><li>Firefighter</li></a>
+            <a id="anchor-tag-color" href="https://in.indeed.com/career/stenographer/salaries"><li>Stenographer</li></a>
         </ul>
     </div>
     </div>
