@@ -6,27 +6,70 @@ Post.innerHTML=post
 let PopularSearches=document.querySelector("#popular_searches")
 PopularSearches.innerHTML=popular_search
 
-
+let data;
 document.querySelector("#find_jobs").addEventListener("click",findJobFunction)
-function findJobFunction(){
+async function findJobFunction(){
     //console.log("working")
     Post.innerHTML=null
     PopularSearches.innerHTML=null
-    getData()
+    // let content=document.querySelector("#content")
+    // content.innerHTML=filter_option
+    data= await getData()
+    appenData(data)
+    //getData()
+    
+console.log(data)
+
+
 }
+
+
+
 
 let getData=async()=>{
     let job_title=document.querySelector("#job_title").value 
     let city=document.querySelector("#city").value 
-     let url=`https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=d6d838a5&app_key=538cf7524ac5d504e82b25ccf0afd74d&results_per_page=20&title_only=${job_title}&where=${city}`
+     let url=`https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=d6d838a5&app_key=538cf7524ac5d504e82b25ccf0afd74d&results_per_page=200&title_only=${job_title}&where=${city}&salary_min=10000&salary_max=10000000`
      //let url=`https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=d6d838a5&app_key=538cf7524ac5d504e82b25ccf0afd74d&results_per_page=20&title_only=frontend%20developer&where=kolkata`
      let res= await fetch(url)
-     let data=await res.json()
-     appenData(data)
-     //console.log(data)
+     let information=await res.json()
+     //appenData(data)
+     //console.log(ingormstion)
+     return information
   }
 
   let appenData=(data)=>{
+
+    let content=document.querySelector("#content")
+    //content.innerHTML=filter_option
+    let filterSection=document.createElement("div")
+    filterSection.setAttribute("id","filter_section")
+
+    let partTime=document.createElement("button")
+    partTime.innerText="Part Time Job"
+    partTime.setAttribute("id","part_time")
+    partTime.setAttribute("class","job_type")
+    partTime.addEventListener("click",function(){
+      partTimeJob()
+    })
+
+    let fullTime=document.createElement("button")
+    fullTime.innerText="Full Time Job"
+    fullTime.setAttribute("id","full_time")
+    fullTime.setAttribute("class","job_type")
+
+    let LTH=document.createElement("button")
+    LTH.innerText="Salary Low to High"
+    LTH.setAttribute("id","lth")
+    LTH.setAttribute("class","salary")
+
+    let HTL=document.createElement("button")
+    HTL.innerText="Salary High to Low"
+    HTL.setAttribute("id","htl")
+    HTL.setAttribute("class","salary")
+
+    content.append(filterSection,partTime,fullTime,LTH,HTL)
+
     let jobs=document.querySelector("#jobs")
     jobs.innerHTML=null 
     let info=data.results
@@ -67,7 +110,7 @@ let getData=async()=>{
   let jobDetails=document.querySelector("#job_details")
   function job_details(ele){
      jobDetails.innerHTML=null
-     //console.log(ele)
+     console.log(ele)
      let heading=document.createElement("h2")
      heading.innerText=ele.title
      let company_name=document.createElement("p")
@@ -95,9 +138,8 @@ let getData=async()=>{
   }
 
   
- 
   function job_applyFunc(ele){
    localStorage.setItem("Applied_job_data",JSON.stringify(ele))
    
-        window.location.href="apply_job.html"
+        window.location.href="application.html"
   }
