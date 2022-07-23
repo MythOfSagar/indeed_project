@@ -70,7 +70,7 @@ let checkData=(event)=>{
             let checkPass=(logIn_pass)=>{
                 
                 if(fArray[0].password==logIn_pass){
-                    window.location.href="index.html"
+                    window.location.href="/find_Job/find_jobs.html"
                 }
 
                 else{
@@ -130,7 +130,7 @@ let checkData=(event)=>{
 
     
 
-                        window.location.href="index.html"
+                        window.location.href="/find_Job/find_jobs.html"
                       }
                       
                       
