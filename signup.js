@@ -31,7 +31,7 @@ signUpmail.innerHTML=` <div id="signUp_password">
 </div>
 <div class="terms">
     <p>
-        By creating an account or logging in, you understand and agree to Indeed's Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
+        By creating an account or logging in, you understand & agree to Indeed's Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
     </p>
 </div>
 <div>
