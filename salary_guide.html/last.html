@@ -71,12 +71,84 @@
           position: relative;
           top: 20%;
       }
-    
+     /* navbar section */
+     #mynavbar{
+        width: 100%;
+        height: 80px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+    }
+    #navsection-1{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #navsection-2{
+        width: 30%;
+        height: 100%;
+        position: relative;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    #navsection-2 p{
+        position: relative;
+        top: 50%;
+        font-size: 18px;
+    }
+    #navindeedlink{
+        width: 35%;
+        height: 95%;
+        margin-top: 2%;
+    }
+    #navindeedtext{
+        width: 75%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #navindeedtext p{
+        position: relative;
+        top: 50%;
+        font-size: 18px;
+    }
+    #pagelinks{
+        text-decoration: none;
+        color: #24262b;
+    }
+    #pagelinks:hover{
+        text-decoration: underline;
+        font-size: 24px;
+        color: #2557a7;
+    }
 
     </style>
 </head>
 <body>
     
+     <!-- navbar -->
+     <div id="mynavbar">
+        <div id="navsection-1">
+          <div id="navindeedlink">
+              <a href="https://in.indeed.com/?from=gnav-title-webapp"><img src="https://i.ibb.co/FBWSrg5/indeedkjgf.png" alt=""></a>
+          </div>
+          <div id="navindeedtext">
+              <a id="pagelinks" href=""><p>Find jobs</p></a>
+              <a id="pagelinks" href=""><p> Company reviews</p></a>
+              <a id="pagelinks" href=""><p>Salary Guide</p></a>
+          </div>
+        </div>
+
+        <div id="navsection-2">
+          <a id="pagelinks" href=""><p>Post your resume</p></a>
+          <a id="sign-in-link" href=""><p>Sign In</p></a>
+          <p>|</p>
+          <a id="pagelinks" href=""><p>Employers / job post</p></a>
+        </div>
+  </div>
 
     
    <div class=" mt-5">
