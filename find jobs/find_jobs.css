@@ -103,6 +103,7 @@ color: rgb(92, 89, 89);
     margin-top: 100px;
     text-align: center;
     padding-bottom: 50px;
+    
 }
 #lower>p>a{
     text-decoration: none;
@@ -113,7 +114,7 @@ color: rgb(92, 89, 89);
     margin-top: 30px;
     line-height: 30px;
     width: 98%;
-
+    
 }
 #footer>div>a{
   margin-right: 30px;
@@ -138,6 +139,86 @@ color: rgb(92, 89, 89);
     margin-bottom: 10px;
 }
 #bottom>button:hover{
+    background-color: #0a3272;
+}
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+#container>div{
+   
+    /* border: 1px solid black; */
+    /* height: 800px; */
+}
+#jobs{
+    width: 40%;
+    margin-left: 20px;
+
+}
+.box{
+border: 1px solid grey;
+border-radius: 10px;
+padding: 10px;
+margin-top: 10px;
+cursor: pointer;
+}
+.div1{
+display: flex;
+font-size: 15px;
+}
+.div1>div:first-child{
+    margin-right: 10px;
+    background-color: #e4e2e0;
+    padding: 0px 5px 0px 5px;
+    border-radius: 10px;
+}
+.div1>div:last-child{
+    margin-right: 10px;
+    background-color: rgb(154, 201, 148);
+    padding: 0px 5px 0px 5px;
+    border-radius: 10px;
+    width: 130px;
+}
+i{
+    padding-right: 5px;
+    
+}
+
+                                    /* Job Details Section */
+#job_details{
+    width: 50%;
+    margin-top: 10px;
+   
+}
+#job_details>div{
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    margin-right: 20px;
+}
+#job_details>div>h2+p{
+    color: #2557a7;
+
+}
+#job_details>div>h2+p:hover{
+    text-decoration: underline;
+
+}
+#apply_btn{
+    border-radius: 8px;
+    width: 140px;
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: #2557a7;
+    color: white;
+    border: 1px solid #2557a7;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+#apply_btn:hover{
     background-color: #0a3272;
 }
 

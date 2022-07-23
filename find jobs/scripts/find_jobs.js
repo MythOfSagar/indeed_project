@@ -12,18 +12,22 @@ function findJobFunction(){
     //console.log("working")
     Post.innerHTML=null
     PopularSearches.innerHTML=null
+
+    
+
     getData()
+
 }
 
 let getData=async()=>{
     let job_title=document.querySelector("#job_title").value 
     let city=document.querySelector("#city").value 
-     let url=`https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=d6d838a5&app_key=538cf7524ac5d504e82b25ccf0afd74d&results_per_page=20&title_only=${job_title}&where=${city}`
+     let url=`https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=d6d838a5&app_key=538cf7524ac5d504e82b25ccf0afd74d&results_per_page=200&title_only=${job_title}&where=${city}&salary_min=10000&salary_max=10000000`
      //let url=`https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=d6d838a5&app_key=538cf7524ac5d504e82b25ccf0afd74d&results_per_page=20&title_only=frontend%20developer&where=kolkata`
      let res= await fetch(url)
      let data=await res.json()
      appenData(data)
-     //console.log(data)
+     console.log(data)
   }
 
   let appenData=(data)=>{
@@ -67,7 +71,7 @@ let getData=async()=>{
   let jobDetails=document.querySelector("#job_details")
   function job_details(ele){
      jobDetails.innerHTML=null
-     //console.log(ele)
+     console.log(ele)
      let heading=document.createElement("h2")
      heading.innerText=ele.title
      let company_name=document.createElement("p")
@@ -99,5 +103,5 @@ let getData=async()=>{
   function job_applyFunc(ele){
    localStorage.setItem("Applied_job_data",JSON.stringify(ele))
    
-        window.location.href="apply_job.html"
+        window.location.href="application.html"
   }
