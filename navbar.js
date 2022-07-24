@@ -2,7 +2,7 @@ function navBar(){
     return`<div>
             <div><a href="/find_Job/find_jobs.html"><img src="https://i.ibb.co/FBWSrg5/indeedkjgf.png" alt=""></a></div>
             <div class="find_blue"><a href="/find_Job/find_jobs.html">Find Jobs</a></div>
-            <div class="company_blue"><a href="#">Comapny Reviews</a></div>
+            <div class="company_blue"><a href="index.html">Comapny Reviews</a></div>
             <div class="salary_blue"><a href="#">Salary Guide</a></div>
         </div>
         <div>
